@@ -46,19 +46,19 @@ DEMO用户名：test3 密码：123456 登陆
 
 # APP
 
-![](https://gitee.com/ouyangyiguang/ibytecoin_robot/raw/master/img/f1.jpg)
+![](https://github.com/ouyangyiguang/ibytecoin/blob/master/img/f1.jpg)
 
-![](https://gitee.com/ouyangyiguang/ibytecoin_robot/raw/master/img/f2.jpg)
+![](https://github.com/ouyangyiguang/ibytecoin/blob/master/img/f2.jpg)
 
-![](https://gitee.com/ouyangyiguang/ibytecoin_robot/raw/master/img/f3.jpg)
+![](https://github.com/ouyangyiguang/ibytecoin/blob/master/img/f3.jpg)
 
 
 # 后台管理
 
-![](https://gitee.com/ouyangyiguang/ibytecoin_robot/raw/master/img/admin1.jpg)
+![](https://github.com/ouyangyiguang/ibytecoin/blob/master/img/admin1.jpg)
 
-![](https://gitee.com/ouyangyiguang/ibytecoin_robot/raw/master/img/admin2.jpg)
+![](https://github.com/ouyangyiguang/ibytecoin/blob/master/img/admin2.jpg)
 
-![](https://gitee.com/ouyangyiguang/ibytecoin_robot/raw/master/img/admin3.jpg)
+![](https://github.com/ouyangyiguang/ibytecoin/blob/master/img/admin3.jpg)
 
-![](https://gitee.com/ouyangyiguang/ibytecoin_robot/raw/master/img/admin4.jpg)
+![](https://github.com/ouyangyiguang/ibytecoin/blob/master/img/admin4.jpg)
