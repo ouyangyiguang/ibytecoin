@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,viewport-fit=cover">
+	<meta name="apple-touch-fullscreen" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="white"><!--black  WHITE-->
+	<link rel="apple-touch-icon" href="http://test.dcdy.com/storage/60x60.png?147" />
+	<link rel="apple-touch-icon" sizes="76x76" href="http://test.dcdy.com/storage/76x76.png?147" />
+	<link rel="apple-touch-icon" sizes="120x120" href="http://test.dcdy.com/storage/120x120.png?147" />
+	<link rel="apple-touch-startup-image" href="http://test.dcdy.com/storage/120x120.png?147" />
+	<style>
+
+@supports (bottom: env(safe-area-inset-bottom)){
+    body,
+    .footer{
+        padding-bottom: constant(safe-area-inset-bottom);
+        padding-bottom: env(safe-area-inset-bottom);
+    }
+@mixin iphonex-css {
+  padding-top: constant(safe-area-inset-top); //为导航栏+状态栏的高度 88px
+  padding-top: env(safe-area-inset-top); //为导航栏+状态栏的高度 88px
+  padding-left: constant(safe-area-inset-left); //如果未竖屏时为0
+  padding-left: env(safe-area-inset-left); //如果未竖屏时为0
+  padding-right: constant(safe-area-inset-right); //如果未竖屏时为0
+  padding-right: env(safe-area-inset-right); //如果未竖屏时为0
+  padding-bottom: constant(safe-area-inset-bottom); //为底下圆弧的高度 34px
+  padding-bottom: env(safe-area-inset-bottom); //为底下圆弧的高度 34px
+}
+@mixin iphonex-support {
+  @supports (bottom: constant(safe-area-inset-top)) or (bottom: env(safe-area-inset-top)) {
+    body.iphonex {
+      @include iphonex-css;
+    }
+  }
+}
+
+
+.lockDiv{
+left:0;top:0;width:100%;height:100%;position:fixed;
+text-align:center; 
+background: rgba(0, 0, 0, 0.7);
+z-index: 99999;
+}
+
+
+}
+
+	</style>
+	<title>币科量化</title>
+	<!-- 正式发布的时候使用，开发期间不启用。↓ -->
+	<!--        <script src="/h5/touch-emulator.js"></script>
+		<script>
+            TouchEmulator();
+			if (document.documentElement.clientWidth > 1024) {
+				window.location.href = '/h5/pcguide.html#'+location.pathname+location.search;
+			}
+		</script> -->
+	<style>
+		::-webkit-scrollbar {
+			display: none;
+		}
+		
+	</style>
+	<!-- 正式发布的时候使用，开发期间不启用。↑ -->
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			document.documentElement.style.fontSize = document.documentElement.clientWidth / 20 + 'px'
+		})
+		
+		
+		
+		
+	</script>
+	<link rel="stylesheet" href="<%= BASE_URL %>static/index.css" />
+</head>
+
+<body>
+
+
+
+	<!-- 该文件为 H5 平台的模板 HTML，并非应用入口。 -->
+	<!-- 请勿在此文件编写页面代码或直接运行此文件。 -->
+	<!-- 详见文档：https://uniapp.dcloud.io/collocation/manifest?id=h5-template -->
+	<noscript>
+		<strong>Please enable JavaScript to continue.</strong>
+	</noscript>
+	<div id="app"></div>
+	<!-- built files will be auto injected -->
+	<!--#ifdef H5-->
+ <div id="weixincover" class="mask isFullScreen weixin" catchtouchmove="false" @touchmove.stop.prevent="moveHandle()">
+    <a href="http://test.dcdy.com/install_ib">
+		 <img src="http://test.dcdy.com/uploads/uniapp/weixincover.png" style="width:100%">
+	</a>
+			<view class="spinner">
+				<slot>
+					<img src="http://test.dcdy.com/storage/120x120.png">
+				</slot>
+				<view style="width: 100%;text-align: center;display: inline-block;">
+					
+				</view>
+			</view>
+ </div>
+	<div id="addtoscreen" class="lockDiv">
+		<a href="http://test.dcdy.com/install_ib">
+			<img style="width: 100%;z-index: 100000000000;" src="http://test.dcdy.com/uploads/uniapp/addtoscreen.png">
+		</a>
+	</div>
+	<div id="downandroidapp" class="lockDiv">
+		<a href="http://test.dcdy.com/install_ib">
+			style="background-color:#00B48E;height: 80px;width:100%;position: fixed;z-index: 1000;display:inline-block; bottom: 0px;left: 0;line-height: 80px;padding: 0px;text-align: center;font-size: 30px;text-decoration: none;">
+			安卓DEMO</a>
+	</div>
+
+
+	<script>
+		document.getElementById('weixincover').style.display = 'none';
+		document.getElementById('addtoscreen').style.display = 'none';
+		document.getElementById('downandroidapp').style.display = 'none';
+		
+		var isInWebAppiOS = (window.navigator.standalone == true); //如果是从桌面打开，isIwebapp 显示为真
+		//var isInWebAppChrome = (window.matchMedia('(display-mode: standalone)').matches);
+		
+		var userAgent = navigator.userAgent;
+		var weixin = isWeiXin();
+		var isAndroid = userAgent.indexOf('Android') > -1 || userAgent.indexOf('Linux') > -1;
+
+		if (weixin) {
+			document.getElementById('weixincover').style.display = 'block';
+		} else {
+			if (isAndroid) {
+				//document.getElementById('downandroidapp').style.display = 'block';
+			}else{
+				if (isInWebAppiOS == false) {
+					if (userAgent.indexOf("iPhone") > -1 || userAgent.indexOf("iPad") > -1) {
+						//document.getElementById('addtoscreen').style.display = 'block';
+					}
+				}
+			}
+
+		}
+
+		//判断是否是微信浏览器的函数
+		function isWeiXin() {
+			//window.navigator.userAgent属性包含了浏览器类型、版本、操作系统类型、浏览器引擎类型等信息，这个属性可以用来判断浏览器类型
+			var ua = window.navigator.userAgent.toLowerCase();
+			//通过正则表达式匹配ua中是否含有MicroMessenger字符串
+			if (ua.match(/MicroMessenger/i) == 'micromessenger') {
+				return true;
+			} else {
+				return false;
+			}
+		}
+		
+		
+
+		
+		
+    </script>
+	<!--#endif-->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?9cb2f579a3cfe283a13b2c87d5e3d1a0";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<style>
+page{  
+       width: 100%;  
+       height: 100%;  
+       overflow: hidden;  
+ }
+	.zhanwei{
+		width: 100%;
+		height: 1800px;
+		background: #ffffff;
+		z-index: 100000;
+	}
+	.mask {
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		z-index: 3000;
+		transition: opacity .3s linear;
+		background: #f9f9f9;
+	}
+
+	.full-screen {
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		overflow: auto;
+
+	}
+	.spinner {
+		position: absolute;
+		width: 100%;
+		top: 40%;
+		left: 0%;
+		text-align: center;
+	}
+	.weixin{
+		/*background: url('https://www.glseed.com/uploads/uniapp/weixincover.png') no-repeat bottom right;
+		background-size:100% 100%;
+		-o-background-size: 100% 100%;
+		-webkit-background-size:100% 100%;*/
+		/*background-position:right 80rpx;*/
+	}
+	
+</style>
+</body>
+
+</html>

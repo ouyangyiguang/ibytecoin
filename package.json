@@ -1,0 +1,16 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "description": "一个uniapp封装使用模板",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "LuckyRiko",
+  "license": "ISC",
+  "dependencies": {
+    "uni-read-pages": "^1.0.5",
+    "uni-simple-router": "^1.5.5",
+    "vue-i18n": "^8.24.1"
+  }
+}

@@ -1,0 +1,66 @@
+/* 颜色变量 */
+
+/* 行为相关颜色 */
+$qs-color-primary: #007aff;
+$qs-color-success: #4cd964;
+$qs-color-warning: #f0ad4e;
+$qs-color-error: #dd524d;
+
+/* 文字基本颜色 */
+// $qs-text-color: #e5e5e5; //基本色
+// $qs-text-color-inverse: #fff; //反色
+// $qs-text-color-grey: #999; //辅助灰色，如加载更多的提示信息
+// $qs-text-color-placeholder: #e5e5e5;
+// $qs-text-color-disable: #c0c0c0;
+
+/* 背景颜色 */
+// $qs-bg-color: #FFFFFF;
+// $qs-bg-color-light: #F8F8F8;
+// $qs-bg-color-dark: #F5F5F5;
+// $qs-bg-color-hover: #f1f1f1; //点击状态颜色
+// $qs-bg-color-mask: rgba(0, 0, 0, 0.4); //遮罩颜色
+
+/* 边框颜色 */
+$qs-border-color: #c8c7cc;
+$qs-border-color-light: #F5F5F5;
+
+/* 尺寸变量 */
+
+/* 文字尺寸 */
+$qs-font-size-sm: 24rpx;
+$qs-font-size-base: 28rpx;
+$qs-font-size-lg: 32rpx;
+
+/* 图片尺寸 */
+$qs-img-size-sm: 40rpx;
+$qs-img-size-base: 52rpx;
+$qs-img-size-lg: 80rpx;
+
+/* Border Radius */
+$qs-border-radius-sm: 4rpx;
+$qs-border-radius-base: 6rpx;
+$qs-border-radius-lg: 12rpx;
+$qs-border-radius-circle: 50%;
+
+/* 水平间距 */
+$qs-spacing-row-sm: 10px;
+$qs-spacing-row-base: 20rpx;
+$qs-spacing-row-lg: 30rpx;
+
+$spacing-row-size: (
+	0: 0,
+	sm: $qs-spacing-row-sm,
+	md: $qs-spacing-row-base,
+	lg: $qs-spacing-row-lg
+);
+
+/* 垂直间距 */
+$qs-spacing-col-sm: 8rpx;
+$qs-spacing-col-base: 16rpx;
+$qs-spacing-col-lg: 24rpx;
+$spacing-col-size: (
+	0: 0,
+	sm: $qs-spacing-col-sm,
+	md: $qs-spacing-col-base,
+	lg: $qs-spacing-col-lg
+);

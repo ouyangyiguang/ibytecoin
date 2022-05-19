@@ -1,0 +1,469 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue",
+		"qs-(.*)": "@/qs-ui/components/qs-$1/qs-$1.vue"
+	},
+	"pages": [{
+		"path": "pages/index/index",
+		"style": {
+			"navigationStyle": "custom"
+		}
+	}, {
+		"path": "pages/shop/index",
+		"style": {
+			"navigationStyle": "custom",
+			"navigationBarTitleText": "数字币商城"
+		}
+	}, {
+		"path": "pages/shop/list",
+		"style": {
+			"navigationBarTitleText": "产品列表"
+		}
+	}, {
+		"path": "pages/shop/view",
+		"style": {
+			"navigationBarTitleText": "产品详细"
+		}
+	},
+	{
+		"path": "pages/shop/cart",
+		"style": {
+			"navigationStyle": "custom",
+			"navigationBarTitleText": "购物车"
+		}
+	},
+	{
+		"path": "pages/order/createorder",
+		"style": {
+			"navigationBarTitleText": "创建订单"
+		}
+	},
+	{
+		"path": "pages/order/order",
+		"style": {
+			"navigationStyle": "custom",
+			"navigationBarTitleText": "订单列表"
+		}
+	},
+	{
+		"path": "pages/order/order_view_payment",
+		"style": {
+			"navigationStyle": "custom",
+			"navigationBarTitleText": "订单详情"
+		}
+	},
+	{
+		"path": "pages/order/payfinsh",
+		"style": {}
+	},
+	{
+		"path": "pages/info/news",
+		"style": {}
+	},
+	{
+		"path": "pages/info/help",
+		"style": {}
+	}, {
+		"path": "pages/info/view"
+	}, {
+		"path": "pages/info/view_soochain"
+	}, {
+		"path": "pages/my/my",
+		"style": {
+			"navigationStyle": "custom",
+			"navigationBarTitleText": "用户中心"
+		}
+	}, 
+	{
+		"path": "pages/my/user/invitelink",
+		"style": {
+			"navigationBarTitleText": "分享",
+			"navigationBarBackgroundColor": "#FE5C47"
+		}
+	},{ 
+		"path": "pages/my/user/feedback",
+		"style": {
+			"navigationBarTitleText": "工单提交"
+		}
+	},{ 
+		"path": "pages/my/user/levelcente",
+		"style": {
+			"navigationBarTitleText": "会员升级"
+		}
+	},
+	{
+		"path": "pages/my/user/user",
+		"style": {
+			"navigationStyle": "custom",
+			"navigationBarTitleText": "个人信息"
+		}
+	},
+{
+			"path": "pages/chat/chat",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+	    {
+            "path" : "pages/chat/businessCard",
+            "style" : {
+				"navigationBarTitleText": "",
+				"app-plus": {
+					"titleNView": {
+						"backgroundColor":"#FFFFFF"
+					}
+				}
+			}
+        },
+		{
+			"path": "pages/chat/home",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+	{
+		"path": "pages/my/setting/setting",
+		"style": {}
+	}, {
+		"path": "pages/account/login/login",
+		"style": {}
+	}, {
+		"path": "pages/account/register/register",
+		"style": {}
+	}, {
+		"path": "pages/account/findPassword/findPassword",
+		"style": {}
+	}, {
+		"path": "pages/account/safetyCenter/safetyCenter",
+		"style": {}
+	}, {
+		"path": "pages/account/setPassword/setPassword",
+		"style": {}
+	}, {
+		"path": "pages/account/updatePassword/updatePassword",
+		"style": {}
+	}, {
+		"path": "pages/account/setUserName/setUserName",
+		"style": {}
+	}, {
+		"path": "pages/account/updateUserName/updateUserName",
+		"style": {}
+	}, {
+		"path": "pages/account/login/pwd-login",
+		"style": {
+			"navigationStyle": "custom"
+		}
+	}, {
+		"path": "pages/account/login/sms-login",
+		"style": {}
+	}, {
+		"path": "pages/account/register/email-register",
+		"style": {}
+	}, {
+		"path": "pages/account/register/username-register",
+		"style": {}
+	}, {
+		"path": "pages/account/register/mobile-register",
+		"style": {}
+	}, {
+		"path": "pages/account/findPassword/email-findPassword",
+		"style": {}
+	}, {
+		"path": "pages/account/findPassword/mobile-findPassword",
+		"style": {}
+	}, {
+		"path": "pages/account/accountBind/accountBind",
+		"style": {}
+	}, {
+		"path": "pages/account/accountAppeal/accountAppeal",
+		"style": {}
+	}, {
+		"path": "pages/account/setSafetyQuestion/setSafetyQuestion",
+		"style": {}
+	}, {
+		"path": "pages/account/updateSafetyQuestion/updateSafetyQuestion",
+		"style": {}
+	}, {
+		"path": "pages/account/accountDestroy/accountDestroy",
+		"style": {}
+	}, {
+		"path": "pages/account/updateMobile/updateMobile",
+		"style": {}
+	}, {
+		"path": "pages/account/unbindMobile/unbindMobile",
+		"style": {}
+	}, {
+		"path": "pages/account/bindMobile/bindMobile",
+		"style": {}
+	}, {
+		"path": "pages/account/bindEmail/bindEmail",
+		"style": {}
+	}, {
+		"path": "pages/account/updateEmail/updateEmail",
+		"style": {}
+	}, {
+		"path": "pages/account/unbindEmail/unbindEmail",
+		"style": {}
+	}, {
+		"path": "pages/account/bindWeixin/bindWeixin",
+		"style": {}
+	}, {
+		"path": "pages/account/updateWeixin/updateWeixin",
+		"style": {}
+	}, {
+		"path": "pages/account/unbindWeixin/unbindWeixin",
+		"style": {}
+	}, {
+		"path": "pages/account/bindWeibo/bindWeibo",
+		"style": {}
+	}, {
+		"path": "pages/account/updateWeibo/updateWeibo",
+		"style": {}
+	}, {
+		"path": "pages/account/unbindWeibo/unbindWeibo",
+		"style": {}
+	}, {
+		"path": "pages/account/bindQq/bindQq",
+		"style": {}
+	}, {
+		"path": "pages/account/updateQq/updateQq",
+		"style": {}
+	}, {
+		"path": "pages/account/unbindQq/unbindQq",
+		"style": {}
+	}, {
+		"path": "pages/account/bindTaobao/bindTaobao",
+		"style": {}
+	}, {
+		"path": "pages/account/updateTaobao/updateTaobao",
+		"style": {}
+	}, {
+		"path": "pages/account/unbindTaobao/unbindTaobao",
+		"style": {}
+	}, {
+		"path": "pages/account/bindAlipay/bindAlipay",
+		"style": {}
+	}, {
+		"path": "pages/account/updateAlipay/updateAlipay",
+		"style": {}
+	}, {
+		"path": "pages/account/unbindAlipay/unbindAlipay",
+		"style": {}
+	}, {
+	"path": "uview-ui/components/u-avatar-cropper/u-avatar-cropper",
+	"style": {
+		"navigationBarTitleText": "头像裁剪",
+		"navigationBarBackgroundColor": "#000000"
+	}
+	}, {
+		"path": "pages/my/user/info/realname",
+		"style": {}
+	},{
+		"path": "pages/my/user/info/paymentinfo",
+		"style": {}
+	},
+	{
+		"path": "pages/order/address/index",
+		"style": {
+			"navigationBarTitleText": "地址信息"
+		}
+	},{
+		"path": "pages/order/address/addsite",
+		"style": {
+			"navigationBarTitleText": "地址设置"
+		}
+	},{
+		"path": "pages/my/user/log",
+		"style": {
+			"navigationBarTitleText": "日志记录",
+			"enablePullDownRefresh": true
+		}
+	},{
+		"path": "pages/my/assets/index",
+		"style": {
+			"navigationBarTitleText": "我的钱包"
+		}
+	},{
+		"path": "pages/my/assets/flowlist",
+		"style": {
+			"navigationBarTitleText": "资金列表",
+			"enablePullDownRefresh": true,
+			"navigationBarBackgroundColor": "#FE5C47"
+		}
+	},{
+		"path": "pages/my/assets/flowdetails",
+		"style": {
+			"navigationBarTitleText": "资金明细"
+		}
+	},
+		{
+			"path": "pages/my/assets/shoucoin",
+			"style": {
+				"navigationBarTitleText": "面对面收款"
+			}
+		},
+		{
+			"path": "pages/my/assets/congcoin",
+			"style": {
+				"navigationBarTitleText": "收款"
+			}
+		},
+		{
+			"path": "pages/my/assets/coingcoinorder",
+			"style": {
+				"navigationBarTitleText": "收款记录"
+			}
+		},
+		{
+			"path": "pages/my/assets/ticoin",
+			"style": {
+				"navigationBarTitleText": "提币"
+			}
+		},
+		{
+			"path": "pages/my/assets/zhuancoin_1",
+			"style": {
+				"navigationBarTitleText": "转帐"
+			}
+		},
+		{
+			"path": "pages/my/success",
+			"style": {
+				"navigationBarTitleText": "转帐"
+			}
+		},
+		{
+			"path": "pages/my/assets/convertcoin",
+			"style": {
+				"navigationBarTitleText": "币币兑换"
+			}
+		},
+	{
+		"path": "pages/my/income/index",
+		"style": {
+			"navigationBarTitleText": "我的收益"
+		}
+	},{
+		"path": "pages/my/ticket/index",
+		"style": {
+			"navigationBarTitleText": "优惠券"
+		}
+	},{
+		"path": "pages/my/team/index",
+		"style": {
+			"navigationBarTitleText": "我的团队"
+		}
+	},{
+		"path": "pages/exchange/index",
+		"style": {
+			"navigationBarTitleText": "交易"
+		}
+	},{
+		"path": "pages/exchange/kline",
+		"style": {
+			"navigationBarTitleText": "K线图"
+		}
+	},{
+		"path": "pages/robot/index",
+		"style": {
+			"navigationBarTitleText": "量化机器人"
+		}
+	}
+	,{
+		"path": "pages/otc/index",
+		"style": {
+			"navigationStyle": "custom",
+			"enablePullDownRefresh": true
+		}
+	},{
+		"path": "pages/otc/publish",
+		"style": {
+			"navigationStyle": "custom"
+		}
+	},{
+		"path": "pages/otc/myorder",
+		"style": {
+			"navigationBarTitleText": "我的订单"
+		}
+	},{
+		"path": "pages/otc/myorderview",
+		"style": {
+			"navigationStyle": "custom",
+			"enablePullDownRefresh": true
+		}
+	},{
+		"path": "pages/otc/mypublish",
+		"style": {
+			"navigationBarTitleText": "我的发布"
+		}
+	},{
+		"path": "pages/exchange/hangqing",
+		"style": {
+			"navigationBarTitleText": "行情"
+		}
+	},
+	{
+		"path": "pages/factory/index",
+		"style": {
+			"navigationStyle": "custom",
+			"navigationBarTitleText": "矿机"
+		}
+	},
+	{
+		"path": "pages/factory/mining",
+		"style": {
+			"navigationBarTitleText": "采矿"
+		}
+	}
+	],
+	"globalStyle": {
+		"pageOrientation": "portrait",
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "",
+		"navigationBarBackgroundColor": "#ffffff",
+		"backgroundColor": "#ffffff",
+		"backgroundColorTop": "#ffffff",
+		"backgroundColorBottom": "#A0ABBA"
+	},
+	"tabBar": {
+		// "borderStyle": "black",//BLACK WHITE
+    	"color": "#A0ABBA",
+    	"selectedColor": "#63E5CB",
+    	"borderStyle": "white",
+    	"backgroundColor": "#F3F4F6",
+        "height": "55px",
+        "fontSize": "12px",
+        "iconWidth": "20px",
+		"list": [{
+			"pagePath": "pages/index/index",
+			"iconPath": "static/tabbar/tabbar-home.png",
+			"selectedIconPath": "static/tabbar/tabbar-home-active.png",
+			"text": "首页"
+		}, {
+			"pagePath": "pages/factory/index",
+			"iconPath": "static/tabbar/tabbar-robot.png",
+			"selectedIconPath": "static/tabbar/tabbar-robot-active.png",
+			"text": "矿机"
+		}, {
+			"pagePath": "pages/otc/index",
+			"iconPath": "static/tabbar/tabbar-c2c.png",
+			"selectedIconPath": "static/tabbar/tabbar-c2c-active.png",
+			"text": "C2C"
+		}, {
+			"pagePath": "pages/my/my",
+			"iconPath": "static/tabbar/tabbar-user.png",
+			"selectedIconPath": "static/tabbar/tabbar-user-active.png",
+			"text": "我的"
+		}]
+	},
+	"condition" : { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [
+			{
+				"name": "", //模式名称
+				"path": "", //启动页面，必选
+				"query": "" //启动参数，在页面的onLoad函数里面得到
+			}
+		]
+	}
+}
